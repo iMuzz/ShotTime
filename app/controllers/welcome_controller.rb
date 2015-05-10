@@ -9,11 +9,13 @@ class WelcomeController < ApplicationController
   end
 
   def shot_time
+    sleep(4)
     APNS.send_notification(params[:device_token], :alert => "It's time to take a shot!", :sound => 'default')
     render nothing: true
   end
 
   def beer_time
+    sleep(4)
     APNS.send_notification(params[:device_token], :alert => "It's beer time!", :sound => 'default')
     render nothing: true
   end
