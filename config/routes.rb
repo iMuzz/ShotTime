@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'shots' => 'welcome#shot_time'
-  post 'shottime' => 'welcome#take_shot'
+  get 'shots' => 'welcome#shot_time_test'
+  post 'shottime' => 'welcome#shot_time'
+  post 'beertime' => 'welcome#beer_time'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
